@@ -82,13 +82,13 @@ footer { text-align:center; color:var(--muted); padding:30px 10px; }
       <span class="badge">Audio + Video + Script</span>
       <h2>概要</h2>
       <p>本ページは、静岡大学で開催された平江皮影戯公演資料をもとにした検索ホームページです。各セリフは、Zenodo上の音声ファイルおよび動画の該当時刻と対応しています。</p>
-      <p>検索対象は、平江方言の原文、日本語訳、演目名です。英語訳は入れていません。</p>
+      <p>検索対象は、平江方言の原文、日本語訳、演目名です。</p>
       <p class="small">Zenodo DOI: <a href="https://doi.org/10.5281/zenodo.20084809" target="_blank">https://doi.org/10.5281/zenodo.20084809</a></p>
       <p class="small">Zenodo record: <a href="https://zenodo.org/records/20084809" target="_blank">https://zenodo.org/records/20084809</a></p>
     </div>
     <div>
       <img class='hero-img' src='assets/performance_scene_20251102.jpg' alt='Performance scene at Shizuoka University'>
-      <p><a href='assets/performance_poster_20251102.pdf' target='_blank'>公演ポスターPDFを開く</a></p>
+      <p><a href='assets/performance_poster_20251102.png' target='_blank'>公演ポスターpngを開く</a></p>
     </div>
   </div>
 </section>
@@ -138,7 +138,7 @@ const titleFilter = document.getElementById("titleFilter");
 function playAudio(idx) {
   const r = rows[idx];
   if (!r.audio_url) {
-    alert("この演目のZenodo音声URLが未設定です。");
+    alert("音声の再生に失敗しました。Zenodoのファイル名またはブラウザ設定を確認してください。");
     return;
   }
 
